@@ -60,3 +60,10 @@ VALUES
  '350ml',
  'Melância',
  4.56)      
+
+
+ --Alterando um dado de uma tabela
+
+   update [TABELA DE PRODUTOS]
+  set [EMBALAGEM] = 'Lata'
+  where [CODIGO DO PRODUTO] = '1037797'
