@@ -67,3 +67,8 @@ VALUES
    update [TABELA DE PRODUTOS]
   set [EMBALAGEM] = 'Lata'
   where [CODIGO DO PRODUTO] = '1037797'
+
+  --Deletando linhas da tabela
+
+   delete from [TABELA DE PRODUTOS]
+  where [CODIGO DO PRODUTO] = '1078680';
