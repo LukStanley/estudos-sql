@@ -73,7 +73,7 @@ VALUES
    delete from [TABELA DE PRODUTOS]
   where [CODIGO DO PRODUTO] = '1078680';
 
-  --Alterando a tabela para "not null", e também criando uma Primary key(constraint)
+  --Alterando a coluna da tabela para "not null", e também criando uma Primary key(constraint)
 
   alter table [TABELA DE PRODUTOS]
 add constraint pk_tabela_de_produtos
@@ -82,3 +82,9 @@ primary key clustered ([CODIGO DO PRODUTO])
 alter table[TABELA DE PRODUTOS]
 alter column [CODIGO DO PRODUTO]
 varchar (20) not null;
+
+--Selecionando somente um produto
+
+
+  select * from [TABELA DE PRODUTOS] where [SABOR] = 'UVA';
+
