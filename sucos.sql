@@ -88,3 +88,7 @@ varchar (20) not null;
 
   select * from [TABELA DE PRODUTOS] where [SABOR] = 'UVA';
 
+  -- Aumentando em 10 % os produtos usando filtros
+
+   update [TABELA DE PRODUTOS] set [PRECO DE LISTA] = 1.1 * [PRECO DE LISTA] where SABOR = 'Limão'
+
